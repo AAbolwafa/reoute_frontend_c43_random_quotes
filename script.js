@@ -425,6 +425,7 @@ const updateUI = (idx = 0) => {
 updateUI();
 
 changeEl.addEventListener('click', (e) => {
+    e.preventDefault();
     const i = setRandomIndex(quotes);
     updateUI(i);
 });
